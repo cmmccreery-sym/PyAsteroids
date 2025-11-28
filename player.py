@@ -5,6 +5,7 @@ from circleshape import CircleShape
 class Player(CircleShape):
     def __init__(self, x, y):
         super().__init__(x, y, constants.PLAYER_RADIUS)
+        self.is_player = True
         self.rotation = 0
     
     # in the Player class
